@@ -23,16 +23,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 768px) {
+
     /* Mobile styles*/
     body {
         font-size: 16px; 
-        padding: 10px; 
-        margin: 2rem;
         background-color: #540B51;
+        
     }
     .nav-bar {
-        margin-bottom: 3rem;
+        margin: 65px 55px 65px 55px;
+        
     }
     #hamburger-options {
         display: none;
@@ -57,15 +57,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;ç
+        
+        div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+    
+       :nth-child(1){
+        margin:0 35px 35px 35px ;
+       }
    }
 
-   header div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
+  
 
    h1 {
     color: white;
@@ -77,26 +83,28 @@ body {
    h1 + p {
     color: white;
     font-size: 1.8rem;
+    text-align: center;
    }
 
-   .orange-span {
+   #orange-span {
     color: hsl(41deg 83% 56%);
+    margin: 0;
    }
 
    .header-buttons_div{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    button {
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 1.7rem;
+        height: 5rem;
+        margin: 0;
+       }
+    
    }
-   .header-buttons_div button {
-    text-transform: uppercase;
-    width: 100%;
-    font-size: 1.7rem;
-    height: 5rem;
-    margin-bottom: 1rem;
-   }
+   
 
    .header-buttons_div button:hover {
     background-color: rgb(66 133 244);
@@ -104,13 +112,16 @@ body {
    }
 
    #google-button {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content:center;
     color: #540B51;
    }
    #google-button span {
-    margin-right: 11.5rem;
+    
+    width: 95%;
+    transform: translate(-5%);
    }
 
    
@@ -119,18 +130,145 @@ body {
 
    img[alt="Google logo"]{
     width: 2.3rem;
-    margin-right: auto;
+    
     padding: 1.3rem;
     
    }
 
+   .slack-img_div {
+    overflow: hidden;
+   }
    img[alt="Slack app screenshot"]{
     width:180% ;
     height: auto;
     position:relative;
-    left: 11rem;
+    right: 65px;
 
    }
 
+main,
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main > section:first-child {
+    background-color: #F3EAE2;
+    p {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: bold;
+        font-size: 28px;
+    }
+}
+main > section:nth-child(2) {
+    background-color: white;
+    padding: 2rem;
 
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+        color: #540B51;
+
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+       
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 30%;
+            text-align: center;
+             
+            p {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 550;
+                line-height: 1.5;
+            }
+    
+            p:nth-child(1){
+                font-size: 60px;
+                font-weight: bold;
+                color:#540B51 ;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+
+  
+}
+
+
+
+
+section div img {
+height: 3.5rem;
+}
+
+.logo-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin: 38px 48px 0 48px;
+    align-content: space-between;
+    
+    :nth-child(5) {
+        margin: 48px 0 48px 0;
+    }
+    :nth-child(6) {
+        margin: 48px 0 48px 0;
+    }
+    
+}
+
+ 
+ 
+main > section:nth-child(3){
+    h3 {
+        color: white;
+        text-align:center ;
+        font-size: 3.5rem;
+    }
+}
+footer {
+    background-color: white;
+
+    ul {
+        list-style-type: none;
+
+        
+
+    }
+
+    :nth-child(){
+
+    }
+
+    .li-img {
+        margin-right: 6px;
+    }
+
+    :nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
 }
