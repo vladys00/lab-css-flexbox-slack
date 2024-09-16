@@ -64,10 +64,11 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 35px 75px 35px;
        }
     
        :nth-child(1){
-        margin:0 35px 35px 35px ;
+        margin:0 35px 75px 35px ;
        }
    }
 
@@ -109,6 +110,7 @@ body {
    .header-buttons_div button:hover {
     background-color: rgb(66 133 244);
     color: white;
+    border: none;
    }
 
    #google-button {
@@ -117,6 +119,11 @@ body {
     align-items: center;
     justify-content:center;
     color: #540B51;
+    img {
+        background-color: white;
+        padding: 12px;
+        border-radius: 3px;
+    }
    }
    #google-button span {
     
@@ -130,7 +137,7 @@ body {
 
    img[alt="Google logo"]{
     width: 2.3rem;
-    
+    margin: 0;
     padding: 1.3rem;
     
    }
@@ -240,25 +247,50 @@ height: 3.5rem;
  
  
 main > section:nth-child(3){
+    margin: 0 35px 0 35px;
     h3 {
         color: white;
         text-align:center ;
         font-size: 3.5rem;
     }
+    button {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #540B51 ;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 20px;
+
+    }
+    button:hover{
+        background-color: white;
+        color: #540B51;
+    }
 }
 footer {
     background-color: white;
-
+    margin-top: 35px;
+    ul:nth-child(1){
+        padding-top: 30px;
+    }
     ul {
         list-style-type: none;
-
+        
+        li {
+            font-size: 20px;
+            font-weight: 600;
+            margin:  15px 0 15px 0;
+        }
         
 
     }
-
-    :nth-child(){
-
+    ul:nth-child(3){
+        padding: 0 40px 0 40px;
+        
     }
+    
 
     .li-img {
         margin-right: 6px;
